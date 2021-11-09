@@ -5,7 +5,7 @@ pipeline
     stage('init'){
       steps{
          sh """
-          echo "Hello world"
+          sudo /home/ec2-user/bin/kubectl kubectl version --short --client
           """
           }
           }
