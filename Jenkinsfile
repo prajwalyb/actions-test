@@ -5,7 +5,7 @@ pipeline
     stage('init'){
       steps{
          sh """
-          /var/lib/jenkins/bin version --short --client
+          /var/lib/jenkins/bin/kubectl version --short --client
           """
           }
           }
