@@ -5,7 +5,7 @@ pipeline
     stage('init'){
       steps{
          sh """
-          /home/ec2-user/bin/kubectl version --short --client
+          /var/lib/jenkins/bin version --short --client
           """
           }
           }
