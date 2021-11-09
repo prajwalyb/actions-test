@@ -5,7 +5,7 @@ pipeline
     stage('init'){
       steps{
          sh """
-          /var/lib/jenkins/kubectl get deployments
+          kubectl get deployments
           """
           }
           }
